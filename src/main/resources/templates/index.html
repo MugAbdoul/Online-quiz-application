@@ -30,7 +30,7 @@
                     <a href="/dashboard" class="item_link">MY Dashboard</a>
                 </li>
                 <li class="item" th:if="${session.user != null and session.user.role == 'user'}">
-                    <a href="/start-quiz" class="item_link">Start Quiz</a>
+                    <a href="/user-home" class="item_link">Start Quiz</a>
                 </li>
                 <li class="item" th:if="${session.user != null}">
                     <a href="/logout" class="item_link">Logout</a>
@@ -52,7 +52,7 @@
                     <h1>Welcome to QuizApp..</h1>
                     <p>Are you ready to test your knowledge and challenge your friends?</p>
                     <a href="dashboard" th:if="${session.user != null and session.user.role == 'admin'}">Get started</a>
-                    <a href="start-quiz" th:if="${session.user != null and session.user.role == 'user'}">Get started</a>
+                    <a href="user-home" th:if="${session.user != null and session.user.role == 'user'}">Get started</a>
                     <a href="login" th:if="${session.user == null}">Get started</a>
                 </div>
                 <div class="home_side_img">

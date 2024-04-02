@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 import com.auca.quiz_application.model.User;
 
-@WebFilter("/secured/*")
+@WebFilter({"/quiz/*", "/dashboard"})
 public class FilterAdmin implements Filter {
 
     @Override
