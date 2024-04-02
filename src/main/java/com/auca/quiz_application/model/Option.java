@@ -2,7 +2,8 @@ package com.auca.quiz_application.model;
 
 import java.util.UUID;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
+
 
 @Entity
 public class Option {

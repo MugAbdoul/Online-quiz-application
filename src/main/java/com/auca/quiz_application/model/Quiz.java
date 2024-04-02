@@ -2,10 +2,9 @@ package com.auca.quiz_application.model;
 
 import java.util.UUID;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import javax.persistence.*;
+
+
 
 @Entity
 public class Quiz {

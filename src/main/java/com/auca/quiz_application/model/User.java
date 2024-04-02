@@ -1,8 +1,9 @@
 package com.auca.quiz_application.model;
 
 
-import jakarta.persistence.*;
 import java.util.UUID;
+
+import javax.persistence.*;
 
 
 @Entity
@@ -15,6 +16,7 @@ public class User {
     private String username;
     private String email;
     private String passwordHash;
+    private String role;
 
     // Getters and setters
     public UUID getId() {
@@ -47,5 +49,13 @@ public class User {
 
     public void setPasswordHash(String passwordHash) {
         this.passwordHash = passwordHash;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setrole(String role) {
+        this.role = role;
     }
 }

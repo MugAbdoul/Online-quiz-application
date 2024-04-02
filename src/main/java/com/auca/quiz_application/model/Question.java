@@ -1,8 +1,10 @@
 package com.auca.quiz_application.model;
 
+import java.util.List;
 import java.util.UUID;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
+
 
 @Entity
 public class Question {
@@ -15,6 +17,19 @@ public class Question {
     private Quiz quiz;
 
     private String text;
+
+    @OneToMany(mappedBy = "question", cascade = CascadeType.ALL)
+    private List<Option> options;
+
+    // Getters and setters
+
+    public List<Option> getOptions() {
+        return options;
+    }
+
+    public void setOptions(List<Option> options) {
+        this.options = options;
+    }
 
     // Getters and setters
     public UUID getId() {

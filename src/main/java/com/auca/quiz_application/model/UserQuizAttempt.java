@@ -3,7 +3,8 @@ package com.auca.quiz_application.model;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
+
 
 @Entity
 public class UserQuizAttempt {
